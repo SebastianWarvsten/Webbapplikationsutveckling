@@ -4,16 +4,13 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Contylist from '../views/Contylist.vue'
 import Slieshow from '../views/Slieshow.vue'
+import VueOnlineProp from "vue-online-prop"
 
 
+Vue.use(VueOnlineProp)
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
   {
     path: '/about',
     name: 'About',
@@ -23,6 +20,11 @@ const routes = [
     path: '/contylist',
     name: 'Contylist',
     component: Contylist
+  },
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
   },
   {
     path: '/slieshow',

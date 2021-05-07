@@ -1,11 +1,17 @@
 <template>
   <div id="app">
+    <div v-if="$online"> 
+      <p style="color:green">You are currently online!</p>
+    </div>
+    <div v-else>
+      <p style="color:red">You are offline</p>
+    </div>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/contylist">Contrylist</router-link> |
       <router-link to="/slieshow">Slieshow</router-link>
-      <router-link to="/cities">Cities</router-link>
+
     </div>
     <router-view/>
   </div>
