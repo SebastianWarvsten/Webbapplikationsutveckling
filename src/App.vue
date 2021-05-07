@@ -5,6 +5,7 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/contylist">Contrylist</router-link> |
       <router-link to="/slieshow">Slieshow</router-link>
+      <router-link to="/cities">Cities</router-link>
     </div>
     <router-view/>
   </div>
