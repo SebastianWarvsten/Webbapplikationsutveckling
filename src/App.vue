@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <div v-if="$online"> 
-      <p style="color:green">You are currently online!</p>
+      <p style="background:green; color:white">You are currently online!</p>
     </div>
     <div v-else>
-      <p style="color:red">You are offline</p>
+      <p style="background:red; color:white">You are offline</p>
     </div>
     <div id="nav">
       <router-link to="/">Home</router-link> |
