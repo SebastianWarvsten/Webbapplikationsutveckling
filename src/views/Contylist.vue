@@ -4,7 +4,7 @@
         <b-button @click="decrease" :disabled="buttonInactive">-</b-button>
         <input type="textfield" placeholder="Antal länder som visas" v-model="number">
         <b-button @click="increase">+</b-button>
-        <div v-if="cities != null">
+        <div v-if="cities">
             <div v-for="(city, index) in cities.slice(0, number)" :key="city.alpha3Code">
                 {{index+1}} {{city.name}} <img :alt="city.name +' flag'" :src="city.flag" height="30" width="50">
             </div>
