@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/goatprofilepic.jpeg">
+    <img alt="Vue logo" src="../assets/goat512.jpg" width="512" height="512">
     <homepage msg="Welcome to the 4:th lab"/>
   </div>
 </template>
