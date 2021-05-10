@@ -1,6 +1,6 @@
 <template>
     <div class="contylist">
-        <h1>All 250 contries in alphabetical order</h1>
+        <h1>All 250 contries in alphabetical order with their flag</h1>
         <b-button @click="decrease" :disabled="buttonInactive">-</b-button>
         <input type="textfield" placeholder="Antal länder som visas" v-model="number">
         <b-button @click="increase">+</b-button>
