@@ -1,6 +1,7 @@
 <template>
   <div class="about">
     <h1>Why I do this</h1>
+    <h2>Criterias:</h2>
     <div v-for="criteria in criterias" :key="criteria.name">
       <label>
         {{criteria.name}}
