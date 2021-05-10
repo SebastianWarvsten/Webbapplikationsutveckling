@@ -1,7 +1,9 @@
 <template>
     <div class="contylist">
-        <h1>All contries in alphabetical order</h1>
+        <h1>All 250 contries in alphabetical order</h1>
+        <b-button @click="decrease" :disabled="buttonInactive">-</b-button>
         <input type="textfield" placeholder="Antal länder som visas" v-model="number">
+        <b-button @click="increase">+</b-button>
         <div v-if="cities != null">
             <div v-for="(city, index) in cities.slice(0, number)" :key="city.alpha3Code">
                 {{index+1}} {{city.name}} <img alt="country flag" :src="city.flag" height="30" width="50">
@@ -23,20 +25,34 @@ export default {
     data(){
         return{
             cities: null,
-            number: Number(11),
-            alpha3Code: null
+            number: Number(3),
+            alpha3Code: null,
+            buttonInactive: false
         }
     },
-    el: '#app',
     methods: {
+        decrease(){
+            this.number--
+        },
         fetchCountries(){
             axios.get('https://restcountries.eu/rest/v2/')
             .then(response => {
                 this.cities = response.data
-                console.log(this.cities)
             })
         },
+        increase(){
+            this.number++
+        }
     },
-    name: 'Contrylist'
+    name: 'Contrylist',
+    watch:{
+        number: function(){
+            if(this.number <= 0){
+                this.buttonInactive = true
+            }else{
+                this.buttonInactive = false
+            }
+        }
+    }
 }
 </script>
