@@ -13,16 +13,13 @@
 
 <script>
 import criteria from '../assets/criteria.json'
-
 export default {
-
     data(){
         return{
             criterias: criteria
         }
     },
     methods: {
-
     },
    name: 'About'
 }

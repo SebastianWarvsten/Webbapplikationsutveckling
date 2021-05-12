@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Contylist from '../views/Contylist.vue'
-import Slieshow from '../views/Slieshow.vue'
+import Slideshow from '../views/Slideshow.vue'
 import VueOnlineProp from "vue-online-prop"
 
 
@@ -27,9 +27,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/slieshow',
-    name: 'Slieshow',
-    component: Slieshow
+    path: '/slideshow',
+    name: 'Slideshow',
+    component: Slideshow
   },
 ]
 

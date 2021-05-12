@@ -7,7 +7,6 @@
     När man klickar på en bild så ska temat ändras, ex klickar man på en The Settlers 3 bild så ska temat bli stone/marble
     <h3>Saker kvar att använda:</h3>
 Minst en komponent tar emot, och använder, minst en prop (via props-nyckeln)<br>
-Minst en Bootstrap-Vue-komponent används
 </div>
 </template>
 
