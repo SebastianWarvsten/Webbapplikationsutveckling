@@ -7,16 +7,29 @@
     När man klickar på en bild så ska temat ändras, ex klickar man på en The Settlers 3 bild så ska temat bli stone/marble
     <h3>Saker kvar att använda:</h3>
 Minst en komponent tar emot, och använder, minst en prop (via props-nyckeln)<br>
+    <h1>Why I do this</h1>
+    <h2>Criterias:</h2>
+    <div v-for="criteria in criterias" :key="criteria.name">
+      <label>
+        {{criteria.name}}
+      <input type="checkbox">
+    </label>
+    </div>
 </div>
 </template>
 
 <script>
+import criteria from '../assets/criteria.json'
+
 export default {
+  data(){
+    return{
+      criterias: criteria
+    }
+  },
   name: 'Homepage',
   props: {
     msg: String,
-    name: String,
-    age: Number
   }
 }
 </script>

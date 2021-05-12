@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import About from '../views/About.vue'
+import Contestants from '../views/Contestants.vue'
 import Contylist from '../views/Contylist.vue'
 import Slideshow from '../views/Slideshow.vue'
 import VueOnlineProp from "vue-online-prop"
@@ -12,9 +12,9 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/about',
-    name: 'About',
-    component: About
+    path: '/contestants',
+    name: 'Contestants',
+    component: Contestants
   },
   {
     path: '/contylist',
