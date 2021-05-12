@@ -32,7 +32,7 @@ export default {
         this.sliding = false
       }
     },
-  name: 'Slieshow',
+  name: 'Slideshow',
 }
 </script>
 
