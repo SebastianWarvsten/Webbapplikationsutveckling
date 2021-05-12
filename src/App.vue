@@ -11,7 +11,6 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/contylist">Contrylist</router-link> |
       <router-link to="/slieshow">Slieshow</router-link>
-
     </div>
     <router-view/>
   </div>

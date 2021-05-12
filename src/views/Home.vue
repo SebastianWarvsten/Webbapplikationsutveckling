@@ -1,12 +1,12 @@
 <template>
   <div class="home">
-    <img alt="Goat logo" src="../assets/logo.png" width="512" height="512" />
+    <img alt="Goat logo" src="../assets/logo.png" width="200" height="200" />
     <homepage msg="Welcome to the 4:th lab" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+
 import Homepage from "@/components/Homepage.vue";
 
 export default {
