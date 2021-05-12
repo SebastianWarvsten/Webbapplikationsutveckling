@@ -1,9 +1,9 @@
 <template>
     <div class="contylist">
         <h1>All 250 contries in alphabetical order with their flag</h1>
-        <b-button @click="decrease" :disabled="buttonInactive">-</b-button>
+        <button @click="decrease" :disabled="buttonInactive">-</button>
         <input type="textfield" placeholder="Antal länder som visas" v-model="number">
-        <b-button @click="increase">+</b-button>
+        <button @click="increase">+</button>
         <div v-if="cities">
             <div v-for="(city, index) in cities.slice(0, number)" :key="city.alpha3Code">
                 {{index+1}} {{city.name}} <img :alt="city.name +' flag'" :src="city.flag" height="30" width="50">
