@@ -4,7 +4,9 @@ import Home from '../views/Home.vue'
 import Contestants from '../views/Contestants.vue'
 import Contylist from '../views/Contylist.vue'
 import Slideshow from '../views/Slideshow.vue'
+import Mail from '../views/Mail.vue'
 import VueOnlineProp from "vue-online-prop"
+
 
 
 Vue.use(VueOnlineProp)
@@ -30,6 +32,11 @@ const routes = [
     path: '/slideshow',
     name: 'Slideshow',
     component: Slideshow
+  },
+  {
+    path: '/mail',
+    name: 'Mail',
+    component: Mail
   },
 ]
 
