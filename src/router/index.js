@@ -34,7 +34,7 @@ const routes = [
     component: Slideshow
   },
   {
-    path: '/mail',
+    path: '/:mail',
     name: 'Mail',
     component: Mail
   },

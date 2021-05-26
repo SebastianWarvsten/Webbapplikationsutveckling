@@ -1,22 +1,16 @@
 <template>
   <div class="homepage">
     <h1>{{ msg }}</h1>
-    <h3>Idé 1 :</h3>
-    Gör så att loggan är olika bilder som åker runt i en bootstrap carousel.
-    <br>
-    När man klickar på en bild så ska temat ändras, ex klickar man på en The Settlers 3 bild så ska temat bli stone/marble
-    <h3>Saker kvar att använda:</h3>
-    <br>
-    <h1>Byta bilder via mutation</h1>
+    <h3>Change images through mutation</h3>
     <img :src="picture"><br>
     Picture #: {{$store.state.index+1}}<br>
     
     <button @click="$store.commit('changeIndex')">Byt Bild</button>
-    <h2>Criterias hämtade från lokal json-fil:</h2>
+    <h3>Criterias fetched from local json-fil:</h3>
         <div v-for="criteria in criterias" :key="criteria.name">
       <label>
         {{criteria.name}}
-      <input type="checkbox">
+      <input type="checkbox" checked>
       </label>
     </div>
     
